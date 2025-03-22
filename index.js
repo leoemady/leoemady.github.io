@@ -1,6 +1,6 @@
 console.clear();
 Splitting();
-const dataReferencia = new Date("2025-10-14T14:11:00"); // Data no formato YYYY-MM-DDTHH:MM:SS
+const dataReferencia = new Date("2025-03-22T14:11:00"); // Data no formato YYYY-MM-DDTHH:MM:SS
 
 function atualizarContador() {
     const agora = new Date();
