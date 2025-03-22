@@ -288,3 +288,100 @@ body:before {
         opacity: 1;
     }
 }
+
+/* Responsividade para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .intro-wrap {
+        padding: 0 3rem; /* Diminuir o padding lateral */
+        font-size: 1.5rem; /* Reduzir o tamanho da fonte */
+        text-align: center; /* Centralizar o conteúdo */
+    }
+
+    .intro-wrap .play{
+        position: fixed;
+        left: 1%;
+        width: auto;
+    }
+    /*.intro-wrap .time{*/
+    /*    position: absolute;*/
+    /*    left: 50%;*/
+    /*    transform: translateX(-50%);*/
+    /*    width: auto;*/
+    /*}*/
+    .intro-wrap .recordSpeed{
+        position: absolute;
+        left: 10%;
+        transform: translateX(-50%);
+        width: auto;
+    }
+    /*.intro-wrap .madeWith {*/
+    /*    position: absolute;*/
+    /*    right: 2rem;*/
+    /*    bottom: 2rem;*/
+    /*    will-change: text-shadow;*/
+    /*    animation: rgbText 1s steps(9) 0s infinite alternate;*/
+    /*}*/
+
+
+    .intro-wrap .time {
+        top: 4rem;
+    }
+
+    .intro-wrap .recordSpeed {
+        bottom: 4rem;
+    }
+
+    .intro-wrap .madeWith {
+        bottom: 1rem;
+    }
+
+    /* Ajustar o texto no container */
+    .textCenter {
+        padding: 0 1rem;
+    }
+
+    .scanlines {
+        opacity: 0.4; /* Menor opacidade nas telas pequenas */
+    }
+
+    .scanlines:before {
+        background-size: 100% 4px; /* Melhor ajuste do tamanho das linhas de scan */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .intro-wrap {
+        font-size: 1.2rem; /* Tamanho de fonte menor */
+        padding: 0 1.5rem; /* Reduzir o padding lateral */
+    }
+
+    .intro-wrap .play {
+        font-size: 1.5rem;
+        top: 1rem;
+        left: 15%;
+        transform: translateX(-50%);
+    }
+
+    .intro-wrap .time {
+        font-size: 1.2rem;
+        top: 1rem;
+        left: 65%;
+    }
+
+    .intro-wrap .recordSpeed {
+        font-size: 1.2rem;
+        bottom: 1rem;
+        right: 3rem;
+    }
+
+    .intro-wrap .madeWith {
+        font-size: 1rem;
+        bottom: 0.5rem;
+        left: 40%;
+    }
+
+    /* Ajustar o espaço entre os elementos */
+    .textCenter {
+        font-size: 1rem;
+    }
+}
